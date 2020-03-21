@@ -36,7 +36,7 @@ public class MainCommand implements CommandExecutor {
 		} else {
 			player.sendMessage("" + DispenserSlime.prefix + ChatColor.RED + "Vous n'avez pas la permission.");
 		}
-		return false;
+		return true;
 	}
 
 }
