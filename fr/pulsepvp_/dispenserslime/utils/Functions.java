@@ -101,8 +101,4 @@ public class Functions {
 		}.runTaskTimer(DispenserSlime.getInstance(), 0L, 10L);
 
 	}
-
-	public static void spawnParticle() {
-
-	}
 }
