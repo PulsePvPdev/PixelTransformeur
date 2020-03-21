@@ -15,7 +15,7 @@ import pulsepvp_.dispenserslime.managers.EventsManagers;
 public class DispenserSlime extends JavaPlugin {
 	public static ConsoleCommandSender console = Bukkit.getConsoleSender();
 	private static DispenserSlime instance;
-	public static String prefix = ("" + ChatColor.GOLD + ChatColor.BOLD + "Pixelion " + ChatColor.RESET
+	public static String prefix = ("" + ChatColor.GOLD + ChatColor.BOLD + "PixelionV2.2 " + ChatColor.RESET
 			+ ChatColor.DARK_GRAY + "» " + ChatColor.RESET);
 	public static String console_prefix = "" + ChatColor.GOLD + ChatColor.BOLD + "[" + ChatColor.RESET
 			+ ChatColor.YELLOW + "DispenserSlime" + ChatColor.BOLD + ChatColor.GOLD + "]" + " ";

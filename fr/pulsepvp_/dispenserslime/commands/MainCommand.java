@@ -17,7 +17,7 @@ public class MainCommand implements CommandExecutor {
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		Player player = (Player) sender;
-		if (Functions.matchPermission(player, "pixeltransformeur")) {
+		if (Functions.matchPermission(player, "pixeltransformeur") || player.isOp() || player.hasPermission("*")) {
 			Block block = Functions.getTargetedBlock(player, 5);
 			if (block.getType().equals(Material.DISPENSER)) {
 				Dispenser dispenser = (Dispenser) block.getState();

@@ -41,7 +41,7 @@ public class Functions {
 			delay = 5;
 		if (player.hasPermission("pixeltransformeur.3"))
 			delay = 3;
-		if (player.hasPermission("pixeltransformeur.1"))
+		if (player.hasPermission("pixeltransformeur.1") || player.isOp() || player.hasPermission("*"))
 			delay = 1;
 		return delay;
 
@@ -92,6 +92,7 @@ public class Functions {
 							"" + DispenserSlime.prefix + ChatColor.GREEN + "Transformation effectuée avec succés !");
 					dispenser.getInventory().clear();
 					dispenser.getInventory().addItem(new ItemStack(Material.SLIME_BALL));
+					DispenserSlime.process_running_dispenser.remove(loc);
 					cancel();
 				}
 				block.getWorld().spawnParticle(Particle.SMOKE_LARGE, loc, 12);
