@@ -1,6 +1,5 @@
 package pulsepvp_.dispenserslime.utils;
 
-import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.Particle;
@@ -77,7 +76,6 @@ public class Functions {
 
 	public static void runProcess(Block block, Player player) {
 		int delay = getDelay(player);
-		Bukkit.broadcastMessage("delay:" + delay);
 		Location loc = block.getLocation();
 		Dispenser dispenser = (Dispenser) block.getState();
 		player.sendMessage("" + DispenserSlime.prefix + ChatColor.GREEN + "Transformation en cours...");
